@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Gloock&family=Rubik+Doodle+Shadow&family=Rubik+Scribble&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: wheat;
+    font-family: "Gloock", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to left, #F6E96B, #A2CA71);
+    display: flex;
+    justify-content: center;
+
+}
+
+#main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    color: seagreen;
+}
+
+.todo-contener {
+    width: 90%;
+    max-width: 400px;
+    /* Limit maximum width */
+    padding: 20px;
+
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    overflow-y: scroll;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 13px;
+    margin-top: 10vh;
+}
+
+.todo-contener::-webkit-scrollbar {
+    box-flex-group: gray;
+}
+
+.input {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    padding: 8px 15px;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 7px;
+    border: 2px solid rgb(241, 178, 60);
+    color: black;
+    flex: 1;
+}
+
+.btn {
+    padding: 8px 13px;
+    color: white;
+    background-color: #000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+input:focus,
+input[type="reset"]:focus {
+    outline: none;
+    border: 3px solid wheat;
+}
+
+.listTodo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+li {
+    list-style-type: disc;
+    color: #FFD10B;
+    font-size: 18px;
+    padding: 10px 0;
+    cursor: pointer;
+    list-style-type: none;
+    transition: opacity 0.3s;
+}
+
+li:hover {
+    opacity: 0.6;
+}
+
+.todo-contener::-webkit-scrollbar {
+    width: 8px;
+    height: 20px;
+}
+
+.todo-contener::-webkit-scrollbar-thumb {
+    background-color: #FFD10B;
+    border-radius: 10px;
+}
+
+.todo-contener::-webkit-scrollbar-track {
+    background-color: wheat;
+}
+
+.todo-contener::-webkit-scrollbar-thumb:hover {
+    background-color: #FFD37B;
+}
